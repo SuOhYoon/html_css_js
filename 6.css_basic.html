@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css basic</title>
+</head>
+
+<body>
+    <h2>글꼴의 상대 크기</h2>
+    <!-- 별도의 설정이 없을 때 16px -->
+    <p>부모 글꼴의 본래 크기</p>
+    <!-- em : 부모요소에 대한 배수, % : 부모요소에 대한 비율, (사실상 같은 의미이지만 다른 표현이 있음을 알고 있으면 좋을듯) -->
+    <p style="font-size: 150%">부모 글꼴의 1.5크기</p>
+
+    <div style="font-size: 20px">
+        부모 텍스트
+        <p style="font-size: 1.5em">자식 텍스트</p>
+    </div>
+
+    <!-- 디스플레이의 높이에 대한 비욜 : vh -->
+    <p style="font-size: 5vh">높이에 대한 상대크기</p>
+    <!-- 디스플레이의 너비에 대한 비욜 : vw -->
+    <p style="font-size: 5vw">너비에 대한 상대크기</p>
+
+    <h2>margin, border, padding에 대한 개념</h2>
+    <!-- margin: auto;를 하면 가운데 정렬(상하좌우로 margin을 줌) -->
+    <!-- margin, padding등으로 px단위로 조절도 가능하긴 하다 -->
+    <!-- <div style="border: 5px solid black; width: 400px; height: 200px; margin: auto; padding-left: 100px;">margin, border, padding 실습</div> -->
+
+    <!-- place-content: center(수직으로 padding을 줌), text-align: center(수평으로 padding을 줌)으로 정렬 -->
+    <div
+        style="border: 5px solid black; width: 400px; height: 200px; margin: auto; place-content: center; text-align: center;">
+        margin, border, padding 실습
+    </div>
+
+    <!-- <p style="text-align: center;"> hello world</p> -->
+
+    <table border="1" style="border-collapse: collapse; width: 400px; height: 200px; margin: auto; text-align: center;">
+        <caption>테이블 정렬</caption>
+        <thead>
+            <tr>
+                <th>컬럼 1</th>
+                <th>컬럼 2</th>
+                <th>컬럼 3</th>
+                <th>컬럼 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>데이터 1-A</td>
+                <td>데이터 1-B</td>
+                <td>데이터 1-C</td>
+                <td>데이터 1-D</td>
+            </tr>
+            <tr>
+                <td>데이터 2-A</td>
+                <td>데이터 2-B</td>
+                <td>데이터 2-C</td>
+                <td>데이터 2-D</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
